@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Admin</title>
+    <script>
+        window.onload = () => {
+            // Funcionalidade de clickar no container
+            const adminOpts = document.querySelectorAll(".admin-option");
+            for (let i = 0; i <= adminOpts.length - 1; i++) {
+                console.log(adminOpts[i])
+                adminOpts[i].addEventListener("click", function() {
+                    const destination = adminOpts[i].getAttribute("data-link");
+                    console.log(destination)
+                    if ( destination !== null) {
+                        window.location = destination;
+                    }
+                })
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>GESTÃO DO ANIMALEC</h1>
+    <div class="h-line-container">
+        <div class="black-line"></div>
+        <i class="fas fa-star fa-2x"></i>
+        <div class="black-line"></div>
+    </div>
+    <div class="admin-options-container">
+        <div class="admin-option">
+            <p>UTILIZADORES</p>
+            <i class="fas fa-users fa-7x"></i>
+        </div>
+        <div class="admin-option">
+            <p>ANIMAIS</p>
+            <i class="fas fa-dog fa-7x"></i>
+        </div>
+        <div class="admin-option">
+            <p>QUIZZES</p>
+            <i class="fas fa-file-alt fa-7x"></i>        
+        </div>
+        <div class="admin-option">
+            <p>QUESTÕES</p>
+            <i class="fas fa-question-circle fa-7x"></i>
+        </div>
+        <div class="admin-option" data-link="sponsors.html">
+            <p>PATROCINADORES</p>
+            <i class="fas fa-star fa-7x"></i>
+        </div>
+        <div class="admin-option" data-link="experts.html">
+            <p>EXPERTS</p>
+            <i class="fas fa-lightbulb fa-7x"></i>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+}
+.fa-star {
+    color: #666666;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.h-line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.black-line {
+    height: 3px;
+    background-color: black;
+    width: 15%;
+    min-width: 100px;
+    margin: 0 10px;
+}
+
+.admin-options-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding: 20px;
+}
+
+.admin-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #666666;
+    padding: 30px;
+    width: 30%;
+    height: 70%;
+    min-height: 200px;
+}
+
+.admin-option:hover {
+    background-color: #9c9c9c;
+    cursor: pointer;
+}
+
+.admin-option p {
+    font-size: 1.75em;
+    color: white;
+}
+
+.admin-option i {
+    color: rgb(204, 204, 204);
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table {
+    background:#d4d4d459;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+    padding: 10px 70px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    align-self: flex-end;
+    margin: 30px 100px 0 0;
+    width: 100px;
+    border-radius: 7px;
+    background-color: rgb(205, 250, 199);
+    padding: 8px 12px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(205, 250, 199, 0.315);
+}
