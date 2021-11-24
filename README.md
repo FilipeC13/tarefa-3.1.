@@ -1,4 +1,4 @@
-# Tarefa 3.2 PWA - Filipe Caetano
+# Tarefa 3.1 PWA - Filipe Caetano
 
 Para começar o projeto, abrir o ficheiro [admin.html](./prototipe/admin.html).
 Os itens clickáveis são: "Patrocinadores" e "Experts".
